@@ -17,7 +17,7 @@ def main():
 	chat_message = re.compile(r"^:\w+!\w+@\w+\.tmi\.twitch\.tv PRIVMSG #\w+ :")
 	utils.mess(s,"What's up guys?")
 
-	threading._start_new_thread(utils.fill0plist,())
+	threading._start_new_thread(utils.fill0plist())
 
 	while True:
 		response = s.recv(1024).decode("utf-8")
